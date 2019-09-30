@@ -1,9 +1,17 @@
-var express = require('express');
-var app = express();
-var category = require('./controller/categories');
-var product = require('./controller/products');
+const express = require('express');
+const app = express();
+const routes = require('./models/categories');
+//var category = require('./controller/categories');
+//var product = require('./controller/products');
 
-product(app);
+//setup template engine
+app.set('view engine', 'ejs');
+
+
+//static files midleware using
+app.use("/public", express.static(__dirname + '/public'));
+
+routes(app);
 
 const PORT = process.env.PORT || 3000
 app.listen(PORT);
