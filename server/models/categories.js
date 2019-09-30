@@ -4,12 +4,13 @@ var util = require('util');
 var db = require('../config/db.js');
 
 
-module.exports = function(app){
-    app.get('/', function(req, res){
+function get_allcategories(){
       var GETTING_CATEGORY = "SELECT * FROM category";
-      db.query(GETTING_CATEGORY, function (err, result, fields) {
+      var cat = db.query(GETTING_CATEGORY, function (err, result, fields) {
         if (err) throw err;
-        res.render('index', {categories: JSON.stringify (result)});
+
+        //res.render('products', {data: JSON.stringify (result)});
       });
-    });
+      return cat;
 };
+module.exports = get_allcategories;

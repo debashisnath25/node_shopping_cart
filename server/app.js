@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const routes = require('./models/categories');
+const routes = require('./controller/routes');
 //var category = require('./controller/categories');
 //var product = require('./controller/products');
 
