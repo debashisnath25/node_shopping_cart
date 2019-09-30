@@ -1,0 +1,42 @@
+    <!--CSS styles-->
+	
+<!--CSS styles-->
+<link rel="stylesheet" media="all" href="css/bootstrap.min.css"/>
+<link rel="stylesheet" media="all" href="css/animate.min.css"/>
+<link rel="stylesheet" media="all" href="css/font-awesome.min.css"/>
+
+
+<link rel="stylesheet" media="all" href="css/linear-icons.css"/>
+
+
+<link rel="stylesheet" media="all" href="css/magnific-popup.css" />
+<link rel="stylesheet" media="all" href="css/theme.css"/>
+<link rel="stylesheet" media="all" href="css/opencart.css"/>
+
+<!--Google fonts-->
+<link href="//fonts.googleapis.com/css?family=Montserrat:400,500,600&amp;subset=latin-ext" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<!--JS files-->
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script src="js/jquery.magnific-popup.min.js"></script>
+
+<script src="js/main.js"></script>
+<script src="js/opencart.js"></script>
+
+
+
+<link href="css/owl.carousel.min.css" type="text/css" rel="stylesheet" media="screen" />
+<link href="css/ion-range-slider.min.css" type="text/css" rel="stylesheet" media="screen" />
+<link href="css/furniture-icons.min.css" type="text/css" rel="stylesheet" media="screen" />
+<script src="js/jquery.owl.carousel.min.js"></script>
+<script src="catalog/view/theme/mf/js/opencart.js"></script>
+<script src="js/jquery.ion.rangeSlider.js"></script>
