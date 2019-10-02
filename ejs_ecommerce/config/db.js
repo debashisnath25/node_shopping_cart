@@ -13,7 +13,7 @@ const connection = mysql.createConnection({
   host: 'ec2-3-15-170-194.us-east-2.compute.amazonaws.com',
   user: 'clickrstop',
   password: 'Samadder5#',
-  database: 'staging'
+  database: 'nodee'
 })
 
 connection.connect(function(err) {

@@ -8,11 +8,13 @@
     <!-- Mobile Web-app fullscreen -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="mobile-web-app-capable" content="yes">
-    <title>Your Store
-    </title>
+    <title>Your Store</title>
 
     <meta name="description" content="My Store" />
     <%- include('common/meta_links') -%>
+    <style>
+    .image a i{font-size:220px;text-align:center;}
+    </style>
 
     <!-- <script src="catalog/view/theme/mf/js/opencart.js"></script> -->
   </head>
@@ -30,159 +32,15 @@
         </header>
         <div class="container" >
              <div class="owl-icons">
-            <a href="/">
-              <figure>
-                <i class="f-icon f-icon-accessories">
-                </i>
-                <figcaption>Accessories
-                </figcaption>
-              </figure>
-            </a>
-            <a href="/">
-              <figure>
-                <i class="f-icon f-icon-armchair">
-                </i>
-                <figcaption>Armchair
-                </figcaption>
-              </figure>
-            </a>
-            <a href="/">
-              <figure>
-                <i class="f-icon f-icon-bar-set">
-                </i>
-                <figcaption>Bar Set
-                </figcaption>
-              </figure>
-            </a>
-            <a href="/">
-              <figure>
-                <i class="f-icon f-icon-bathroom">
-                </i>
-                <figcaption>Bathroom
-                </figcaption>
-              </figure>
-            </a>
-            <a href="/">
-              <figure>
-                <i class="f-icon f-icon-bedroom">
-                </i>
-                <figcaption>Bedroom
-                </figcaption>
-              </figure>
-            </a>
-            <a href="/">
-              <figure>
-                <i class="f-icon f-icon-bookcase">
-                </i>
-                <figcaption>Bookcase
-                </figcaption>
-              </figure>
-            </a>
-            <a href="/">
-              <figure>
-                <i class="f-icon f-icon-nightstand">
-                </i>
-                <figcaption>Cabinet
-                </figcaption>
-              </figure>
-            </a>
-            <a href="/">
-              <figure>
-                <i class="f-icon f-icon-shoe-cabinet">
-                </i>
-                <figcaption>Carpet
-                </figcaption>
-              </figure>
-            </a>
-            <a href="/">
-              <figure>
-                <i class="f-icon f-icon-chair">
-                </i>
-                <figcaption>Chair
-                </figcaption>
-              </figure>
-            </a>
-            <a href="/">
-              <figure>
-                <i class="f-icon f-icon-carpet">
-                </i>
-                <figcaption>Children room
-                </figcaption>
-              </figure>
-            </a>
-            <a href="/">
-              <figure>
-                <i class="f-icon f-icon-dining-table">
-                </i>
-                <figcaption>Dining Table
-                </figcaption>
-              </figure>
-            </a>
-            <a href="/">
-              <figure>
-                <i class="f-icon f-icon-children-room">
-                </i>
-                <figcaption>Kitchen
-                </figcaption>
-              </figure>
-            </a>
-            <a href="/">
-              <figure>
-                <i class="f-icon f-icon-kitchen">
-                </i>
-                <figcaption>Lightning
-                </figcaption>
-              </figure>
-            </a>
-            <a href="/">
-              <figure>
-                <i class="f-icon f-icon-lightning">
-                </i>
-                <figcaption>Nightstand
-                </figcaption>
-              </figure>
-            </a>
-            <a href="/">
-              <figure>
-                <i class="f-icon f-icon-media-cabinet">
-                </i>
-                <figcaption>Office
-                </figcaption>
-              </figure>
-            </a>
-            <a href="/">
-              <figure>
-                <i class="f-icon f-icon-sofa">
-                </i>
-                <figcaption>Sofa
-                </figcaption>
-              </figure>
-            </a>
-            <a href="/">
-              <figure>
-                <i class="f-icon f-icon-table">
-                </i>
-                <figcaption>Table
-                </figcaption>
-              </figure>
-            </a>
-            <a href="/">
-              <figure>
-                <i class="f-icon f-icon-office">
-                </i>
-                <figcaption>Wardrobe
-                </figcaption>
-              </figure>
-            </a>
-            <a href="/">
-              <figure>
-                <i class="f-icon f-icon-wardrobe">
-                </i>
-                <figcaption>Wardrobe
-                </figcaption>
-              </figure>
-            </a>
-          </div>
+              <% for(var i=0; i < categories.length; i++){ %>
+                <a href="/">
+                  <figure>
+                    <%- categories[i].images %>
+                    <figcaption> <%= categories[i].category_name %> </figcaption>
+                  </figure>
+                </a>
+              <% } %>
+              </div>
         </div>
       </section>
       <script>
@@ -217,7 +75,8 @@
                 <div class="figure-grid">
                   <div class="image">
                     <a href="#" onclick="preview.product('31'); return false;">
-                      <img src="/images/product-1-640x480.png" alt="Nikon D300"  />
+                      <!--<img src="/images/product-1-640x480.png" alt="Nikon D300"  />-->
+                      <%- categories[i].images %>
                     </a>
                   </div>
                   <div class="text">
